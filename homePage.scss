@@ -3,6 +3,9 @@ $size: 12px;
 $fl: left;
 $fr: right;
 $color: #999;
+ul li{
+    list-style: none;
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +14,7 @@ $color: #999;
     height: 200px;
     width: 100%;
     background-color: #fff;
+    position: relative;
 }
 //登录注册
 .topBar{
@@ -166,13 +170,145 @@ $color: #999;
     bottom: 0;
 }
 .search-bar-head a{
+    float: $fl;
     font-size: 14px;
     font-weight: blod;
     color: #000;
-    padding: 0 15px;
     line-height: 60px;
+    padding: 0 15px 0 15px;
 }
-.search-bar-head .search-bar-heada{
+.search-bar-head #search-bar-heada{
+    background: url(../img/hot.gif) no-repeat 70px 8px;
+}
+.search-app{
+    width: 96px;
+    height: 121px;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    background: url(../img/app_bg.gif);
+}
+//轮播图
+.carous-fa{
+    width: 100%;
+    height: 400px;
+}
+.carous{
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+.carous-img{
+    width: 1200;
+    height: 400px;
+    margin-left: 180px;
+    overflow: hidden;
+    position: relative;
+}
+.carous-img ul li{
+    width: 1200px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.carous-img ul .carous-imga .img1{
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+.carous-img ul .carous-imga .img2{
+    position: absolute;
+    left: 570px;
+    top: 0px;
+}
+.carous-btn{
+    width: 105px;
     height: 30px;
-    background: url(../img/hot.gif) no-repeat 70px -9px;
+    background: #000000;
+    opacity: 0.5;
+    position: absolute;
+    left: 540px;
+    bottom: 10px;
+    border-radius: 30px;
+    padding-top: 5px;
+}
+.carous-btn ul li{
+    float: $fl;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 5px 15px;
+}
+.carous-btn ul .active{
+    background: #463B7F;
+}
+.carous a{
+    width: 50px;
+    height: 100px;
+    background: #000000;
+    opacity: 0.6;
+    line-height: 100px;
+    font-size: 50px;
+    color: #FFFFFF;
+    text-align: center;
+    display: none;
+    z-index: 10;
+}
+.carous .btn-prev{
+    position: absolute;
+    left: 210px;
+    top: 140px;
+}
+.carous .btn-next{
+    position: absolute;
+    top: 140px;
+    left: 1130px;
+}
+//所有商品
+.shoopBar{
+    width: 180px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 160px;
+    margin-left: -600px;
+}
+.allShoop{
+    width: 180px;
+    height: 35px;
+    background: #382f6b;
+    a{
+        font-size: 14px;
+        color: #FFFFFF;
+        font-weight: bold;
+        display: block;
+        height: 35px;
+        width: 180px;
+        line-height: 35px;
+        text-align: center;   
+    }
+}
+.shoopCate{
+    width: 180px;
+    height: 565px;
+    dl{
+        width: 170px;
+        height: 50px;
+        background: #463b7f;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    dt strong{
+        font-size: 12px;
+        font-weight: bold;
+        color: #FFFFFF;
+        line-height: 20px;
+    }
+    dt p{
+        font-size: 12px;
+        color: #FFFFFF;
+    }
 }

@@ -4,6 +4,8 @@
 		<meta charset="utf-8" />
 		<title>寺库网</title>
 		<link rel="stylesheet" href="css/homePage.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="js/homePage.js"></script>
 	</head>
 	<body>
 		<!-----------登录 搜索  导航栏----------------->
@@ -58,7 +60,7 @@
 				<!---------首页 导航---------------------->
 				<div class="search-bar-head">
 					<a>首页</a>
-					<a>海外直邮</a>
+					<a id="search-bar-heada">海外直邮</a>
 					<a>闪购SALE</a>
 					<a>我卖我拍</a>
 					<a>品牌旗舰店</a>
@@ -67,9 +69,53 @@
 					<a>女士</a>
 					<a>豪车</a>
 				</div>
+				<!-------------下载APP------------------->
+				<div class="search-app"></div>
 			</div>
 			<!-------------所有商品导航---------------------------->
-			<div class="shoopBar"></div>
+			<div class="shoopBar">
+				<div class="allShoop">
+					<a>全部奢品</a>
+				</div>
+				<div class="shoopCate">
+					<dl>
+						<dt>
+							<strong>包袋</strong>
+							<p>
+								<a>路易威登</a>
+								<a>普拉达</a>
+								<a>古驰</a>
+							</p>
+						</dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<!-------------------轮播图--------------------------------->
+		<div class="carous-fa">
+			<div class="carous">
+				<div class="carous-img">
+					<ul>
+						<li class="carous-imga" style="z-index:1">
+							<img src="img/coura0.jpg" class="img1"/>
+							<img src="img/coura1.png" class="img2" />
+						</li>
+						<li class="carous-imgb">
+							<img src="img/courb0.jpg" class="img1"/>
+							<img src="img/courb1.png" class="img2"/>
+						</li>
+					</ul>
+				</div>
+				<div class="carous-btn" style="z-index: 10">
+					<ul>
+						<li class="active"></li>
+						<li></li>
+					</ul>
+				</div>
+				<a class="btn-prev">&lt;</a>
+				<a class="btn-next">&gt;</a>
+			</div>
 		</div>
 	</body>
 </html>
