@@ -1,0 +1,178 @@
+@charset "utf-8";
+$size: 12px;
+$fl: left;
+$fr: right;
+$color: #999;
+*{
+    margin: 0;
+    padding: 0;
+}
+.fheard{
+    height: 200px;
+    width: 100%;
+    background-color: #fff;
+}
+//登录注册
+.topBar{
+    height: 30px;
+    width: 100%;
+}
+.topBarOn{
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+.shoopcart{
+    font-size: $size;
+    color: $color;
+    line-height: 30px;
+    float: $fr;
+    padding-left: 17px;
+    background: url(../img/shopcart.png) no-repeat 0 9px;
+}
+.vertical{
+    float: $fr;
+    color: $color;
+    margin-right: 5px;
+    line-height: 30px;
+}
+.bara{
+    padding: 0 20px 0 10px;
+    font-size: $size;
+    color: $color;
+    line-height: 30px;
+    float: $fr;
+}
+.barb{
+    height: 30px;
+    padding: 0 10px 0 15px;
+    font-size: $size;
+    color: $color;
+    line-height: 30px;
+    float: $fr;
+    position: relative;
+    //background: #ccc;
+}
+.barbDiv{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: #ccc;
+    width: 100px;
+    padding-left: 17px;
+    display: none;
+}
+.barbDiv a{
+    width: 100px;
+    display: block;
+    font-size: $size;
+    line-height: 15px;
+    padding-top: 5px;
+}
+.barc{
+    padding: 0 20px 0 10px;
+    font-size: $size;
+    color: $color;
+    line-height: 30px;
+    float: $fr;
+}
+.bard{
+    font-size: $size;
+    color: $color;
+    line-height: 30px;
+    float: $fr;
+}
+.bard a{
+    padding: 0 10px 0 10px;
+}
+.topBar-Logo{
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+.topBar-Logo a{
+    width: 42px;
+    height: 100px;
+    display: block;
+    float: $fl;
+    margin-right: 15px;
+    background: url(../img/logo.png);
+}
+.topBar-Logo div{
+    float: $fl;
+}
+//搜索导航
+.searchBar{
+    width: 1200px;
+    height: 155px;
+    margin: 0 auto;
+    position: relative;
+}
+.search-count{
+    width: 485px;
+    height: 35px;
+    position: absolute;
+    top: 30px;
+    left: 260px;
+}
+.search-input{
+    width: 415px;
+    height: 31px;
+    border: 2px solid #463b7f;
+    float: $fl;
+    border-right: none;
+}
+.search-input input{
+    width: 400px;
+    height: 31px;
+    line-height: 31px;
+    border: none;
+    padding-left: 5px;
+    font-size: $size;
+    color: $color;
+}
+.search-sea{
+    width: 68px;
+    height: 35px;
+    float: $fl;
+    background: #463b7f;
+}
+.search-sea a{
+    width: 68px;
+    height: 35px;
+    display: block;
+    line-height: 35px;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center; 
+}
+.search-hot{
+    position: absolute;
+    top: 70px;
+    left: 255px;
+    height: 14px;
+    
+}
+.search-hot a{
+    font-size: $size;
+    color: $color;
+    padding: 0 5px;
+}
+.search-bar-head{
+    height: 45px;
+    position: absolute;
+    left: 245px;
+    bottom: 0;
+}
+.search-bar-head a{
+    font-size: 14px;
+    font-weight: blod;
+    color: #000;
+    padding: 0 15px;
+    line-height: 60px;
+}
+.search-bar-head .search-bar-heada{
+    height: 30px;
+    background: url(../img/hot.gif) no-repeat 70px -9px;
+}
