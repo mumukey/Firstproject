@@ -203,6 +203,9 @@ ul li {
   left: 0;
   top: 0; }
 
+.carous-imga {
+  z-index: 1; }
+
 .carous-img ul .carous-imga .img1 {
   position: absolute;
   top: 0;
@@ -222,7 +225,7 @@ ul li {
   left: 540px;
   bottom: 10px;
   border-radius: 30px;
-  padding-top: 5px; }
+  z-index: 2; }
 
 .carous-btn ul li {
   float: left;
@@ -244,8 +247,7 @@ ul li {
   font-size: 50px;
   color: #FFFFFF;
   text-align: center;
-  display: none;
-  z-index: 10; }
+  display: none; }
 
 .carous .btn-prev {
   position: absolute;
@@ -259,11 +261,14 @@ ul li {
 
 .shoopBar {
   width: 180px;
-  height: 600px;
+  height: 593px;
   position: absolute;
   left: 50%;
-  top: 160px;
-  margin-left: -600px; }
+  top: 165px;
+  margin-left: -600px;
+  z-index: 10;
+  border-left: 2px solid #382F6B;
+  border-bottom: 2px solid #382F6B; }
 
 .allShoop {
   width: 180px;
@@ -281,20 +286,198 @@ ul li {
 
 .shoopCate {
   width: 180px;
-  height: 565px; }
+  height: 565px;
+  position: relative; }
+  .shoopCate dl:nth-of-type(1) dd {
+    position: absolute;
+    left: 180px;
+    top: -2px; }
+  .shoopCate dl:nth-of-type(2) dd {
+    position: absolute;
+    left: 180px;
+    top: 60px; }
   .shoopCate dl {
     width: 170px;
-    height: 50px;
-    background: #463b7f;
+    height: 52px;
     padding-left: 10px;
-    padding-top: 10px; }
-  .shoopCate dt strong {
-    font-size: 12px;
-    font-weight: bold;
-    color: #FFFFFF;
-    line-height: 20px; }
-  .shoopCate dt p {
-    font-size: 12px;
+    padding-top: 10px;
+    z-index: 20;
+    background: #fff;
     color: #FFFFFF; }
+    .shoopCate dl dt strong {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 20px; }
+    .shoopCate dl dt p {
+      font-size: 12px;
+      line-height: 30px; }
+      .shoopCate dl dt p a:hover {
+        color: red;
+        text-decoration: underline; }
+    .shoopCate dl dd {
+      width: 385px;
+      height: 450px;
+      background: #FFFFFF;
+      position: absolute;
+      left: 180px;
+      top: 106px;
+      z-index: 20;
+      padding: 0 25px;
+      border: 2px solid #382f6b;
+      border-left: none;
+      display: none; }
+      .shoopCate dl dd ul li {
+        width: 370px;
+        padding: 5px 0;
+        border-bottom: 1px dotted #000000; }
+        .shoopCate dl dd ul li strong {
+          font-size: 14px;
+          font-weight: bold;
+          color: #382f6b;
+          line-height: 30px; }
+        .shoopCate dl dd ul li div {
+          width: 370px;
+          overflow: hidden; }
+          .shoopCate dl dd ul li div a {
+            height: 30px;
+            font-size: 12px;
+            color: #000000;
+            line-height: 30px;
+            padding: 0 10px;
+            display: block;
+            float: left; }
+            .shoopCate dl dd ul li div a:hover {
+              color: red;
+              text-decoration: underline; }
+            .shoopCate dl dd ul li div a b {
+              padding-left: 10px; }
+      .shoopCate dl dd ul .shoopCate-first {
+        border: none; }
+      .shoopCate dl dd ul .shoopCate-list {
+        border: none; }
+      .shoopCate dl dd ul .shoopCate-list div a {
+        display: inline-block;
+        width: 120px;
+        height: 30px;
+        background: #382f6b;
+        color: #FFFFFF;
+        margin-top: 10px;
+        text-align: center; }
+        .shoopCate dl dd ul .shoopCate-list div a:hover {
+          background: #463b7f;
+          color: #FFFFFF; }
+      .shoopCate dl dd ul .shoopCate-list div .shoopCate-list-a {
+        margin-left: 15px; }
+
+.content {
+  width: 100%; }
+  .content .content-img {
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto; }
+    .content .content-img a {
+      display: inline-block;
+      float: left;
+      padding: 12px 5px 0 5px; }
+      .content .content-img a img {
+        opacity: 1; }
+    .content .content-img a:nth-of-type(1) {
+      margin-left: 180px; }
+
+.global {
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto; }
+  .global .global-line {
+    width: 100%; }
+    .global .global-line .global-line-a {
+      height: 19px;
+      width: 175px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 7px;
+      background: url(../img/index.png) no-repeat -14px -23px; }
+    .global .global-line .global-img {
+      width: 100%;
+      height: 35px;
+      text-align: center;
+      background: url(../img/line_1.jpg) repeat-x left center; }
+      .global .global-line .global-img ul {
+        width: 400px;
+        height: 35px;
+        display: block;
+        margin: 0 auto;
+        padding: 0 40px;
+        background: #fff; }
+        .global .global-line .global-img ul li {
+          width: 100px;
+          height: 35px;
+          font-size: 12px;
+          line-height: 35px;
+          color: #999999;
+          float: left; }
+          .global .global-line .global-img ul li a {
+            width: 38px;
+            height: 37px;
+            display: block;
+            float: left; }
+        .global .global-line .global-img ul li:nth-of-type(1) a {
+          background: url(../img/index.png) -3px -130px; }
+        .global .global-line .global-img ul li:nth-of-type(2) a {
+          background: url(../img/index.png) -53px -130px; }
+        .global .global-line .global-img ul li:nth-of-type(3) a {
+          background: url(../img/index.png) -104px -130px; }
+        .global .global-line .global-img ul li:nth-of-type(4) a {
+          background: url(../img/index.png) -153px -130px; }
+
+.global-shoop1 {
+  width: 1200px;
+  margin-top: 20px; }
+  .global-shoop1 .global-bigimg {
+    float: left; }
+    .global-shoop1 .global-bigimg .global-bigimg-ul {
+      overflow: hidden; }
+      .global-shoop1 .global-bigimg .global-bigimg-ul li {
+        float: left; }
+      .global-shoop1 .global-bigimg .global-bigimg-ul li:nth-of-type(2) {
+        padding-left: 30px; }
+    .global-shoop1 .global-bigimg .global-litimg ul li {
+      float: left;
+      font-size: 12px;
+      width: 190px;
+      padding: 15px 5px 5px 0; }
+      .global-shoop1 .global-bigimg .global-litimg ul li div:nth-of-type(1) {
+        text-align: center;
+        margin-bottom: 15px; }
+      .global-shoop1 .global-bigimg .global-litimg ul li div:nth-of-type(2) {
+        width: 190px;
+        height: 20px;
+        font-weight: bolder;
+        position: relative;
+        padding-left: 40px; }
+        .global-shoop1 .global-bigimg .global-litimg ul li div:nth-of-type(2) .global-city1 {
+          width: 30px;
+          height: 20px;
+          display: block;
+          float: left;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: url(../img/index.png) no-repeat -125px -206px; }
+      .global-shoop1 .global-bigimg .global-litimg ul li div:nth-of-type(3) {
+        height: 30px;
+        width: 190px;
+        font-size: 14px;
+        padding-left: 40px;
+        line-height: 14px;
+        overflow: hidden; }
+      .global-shoop1 .global-bigimg .global-litimg ul li div:nth-of-type(4) {
+        height: 14px;
+        padding-left: 40px; }
+  .global-shoop1 .global-bigimg-fr {
+    width: 200px;
+    height: 400px;
+    border: 1px solid #000000;
+    float: right; }
 
 /*# sourceMappingURL=homePage.css.map */

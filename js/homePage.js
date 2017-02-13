@@ -61,4 +61,27 @@ $(function(){
 //		$(".carous-img ul li").eq(index).siblings().find(".img1").css("left","-10");
 //		$(".carous-img ul li").eq(index).siblings().find(".img2").css("left","570");
 //	}
+//选项卡
+	$(".shoopBar .shoopCate dl:even").css("background","#463b7f");
+	$(".shoopBar .shoopCate dl:odd").css("background","#382f6b");
+	$(".shoopCate dl").hover(function(){
+		var ord = $(".shoopCate dl").index(this);
+		$(".shoopCate dl").eq(ord).css("background","#fff");
+		$(".shoopBar .shoopCate dl").eq(ord).css("color",'#000');
+		
+		$(".shoopCate dl dd").not($(".shoopCate dl dd").eq(ord)).css("display","none");
+		$(".shoopCate dl dd").eq(ord).css("display","block");
+	},function(){
+		$(".shoopBar .shoopCate dl:even").css("background","#463b7f");
+	    $(".shoopBar .shoopCate dl:odd").css("background","#382f6b");
+	    $(".shoopBar .shoopCate dl").css("color",'#fff');
+		$(".shoopCate dl dd").css("display","none");
+	});
+	//图片变亮变暗
+	$(".content-img a ").hover(function(){
+		var ord = $(".content-img a ").index(this);
+		$(".content-img a img").eq(ord).css("opacity",0.5).animate({"opacity":1},800);
+	},function(){
+		$(".content-img a img").eq(ord).stop(true,true).css("opacity",1)
+	});
 });
