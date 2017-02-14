@@ -77,11 +77,28 @@ $(function(){
 	    $(".shoopBar .shoopCate dl").css("color",'#fff');
 		$(".shoopCate dl dd").css("display","none");
 	});
-	//图片变亮变暗
-	$(".content-img a ").hover(function(){
-		var ord = $(".content-img a ").index(this);
-		$(".content-img a img").eq(ord).css("opacity",0.5).animate({"opacity":1},800);
+	//global 图片移动效果
+	$(".global-bigimg-fr ul li").hover(function(){
+		var ord = $(".global-bigimg-fr ul li").index(this);
+		console.log(ord);
+		$(".global-bigimg-fr ul li div a img").eq(ord).animate({"left":-50},300);
 	},function(){
-		$(".content-img a img").eq(ord).stop(true,true).css("opacity",1)
+		$(".global-bigimg-fr ul li div a img").stop(true,true).animate({"left":0},100);
+	});
+	//图片亮度变化
+	$(".imger").hover(function(){
+		var ord = $(".imger").index(this);
+		$(".imger").eq(ord).css("opacity",0.7).animate({"opacity":1},500);
+	},function(){
+		$(".imger").css("opacity",1)
+	});
+	//闪购图片移动效果
+	$(".diver").hover(function(){
+		var ord = $(".diver").index(this);
+		$(".diver a").eq(ord).animate({"left":-50},300);
+		$(".diver i").eq(ord).animate({"left":110},300);
+	},function(){
+		$(".diver a").stop(true,true).animate({"left":0},300);
+		$(".diver i").stop(true,true).animate({"left":180},300);
 	});
 });
