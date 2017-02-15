@@ -101,4 +101,22 @@ $(function(){
 		$(".diver a").stop(true,true).animate({"left":0},300);
 		$(".diver i").stop(true,true).animate({"left":180},300);
 	});
+	//轮播图改变left实现
+	var lens = $(".bott-car-ul li").size();
+	var ord = 0;
+	var mytime = null;
+	console.log(lens);
+	mytime = setInterval(nextImg,3000);
+	function nextImg(){
+		ord++;
+		if(ord == lens-4){
+			
+			$(".bott-car-ul").css("left","0px");
+			ord = 0;
+		}
+		console.log(ord);
+		$(".bott-car-ul").animate({left:-(ord)*229+"px"},1000);
+	}
+
+	
 });
