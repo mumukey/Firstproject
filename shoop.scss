@@ -1,0 +1,48 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+.shoop{
+    width: 100%;
+    overflow: hidden;
+    background: #F3F3F1;
+    .shooper{
+        width: 1200px;
+        overflow: hidden;
+        margin: 20px auto;
+        .shoop-cla{
+            width: 1200px;
+            overflow: hidden;
+            .shoop-cal-fir{
+                width: 1200px;
+                height: 50px;
+                border: 1px solid #000000;
+                .shoop-all{
+                    font-size: 12px;
+                    color: #808080;
+                    line-height: 50px;
+                    display: inline-block;
+                    float: left; 
+                    &:hover{
+                        color: red;
+                    }
+                    span{
+                        padding-right: 20px;
+                        float: left;
+                    }
+                }
+                span{
+                    display: inline-block;
+                    float: right;
+                    font-size: 12px;
+                    color: #808080;
+                    line-height: 50px;
+                    a{
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+}

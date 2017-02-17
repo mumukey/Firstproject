@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="js/register.js"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<!------------顶部-------------------->
+		<div class="secondheard">
+			<div class="secondheard_ma">
+				<div class="secondheard_mb">
+					<img src="img/logo0.png" />
+				</div>
+				<div class="secondheard_mc">
+					<a>寺库首页</a>
+					<a>收藏寺库</a>
+					<a>寺库APP</a>
+				</div>
+			</div>
+		</div>
+		<!-------------------注册----------------------------->
+		<div class="regis">
+			<div class="regiser">
+				<div class="regis_di">
+					<ul class="regis_ul">
+						<li>
+							<div class="hint">
+								<span>用户名</span>
+								<div id="hinter">请输入您的手机号</div>
+							</div>
+							<div class="entry">
+								<input id="phoneName" type="text" />
+							</div>
+						</li>
+						<li>
+							<div class="hint">
+								<span>密码</span>
+								<div id="hinter1"></div>
+							</div>
+							<div class="entry">
+								<input id="userPass" type="text" />
+							</div>
+						</li>
+						<li>
+							<div class="hint">
+								<span>确认密码</span>
+								<div id="hinter2"></div>
+							</div>
+							<div class="entry">
+								<input id="userPassWord" type="text" />
+							</div>
+						</li>
+						<li>
+							<div class="hint">
+								<span><input type="checkbox">贵宾邀请码</span>
+							</div>
+							<div class="entry hiden">
+								<input type="text" id=""/>
+							</div>
+						</li>
+					</ul>
+					<div class="btn">
+						<input type="button" class="btn-fir" disabled="disabled" id="btn" value="注册"/>
+						<div class="btn-sec">
+							<span><input type="checkbox" checked="checked">我一阅读并同意《寺库网用户注册协议》</span>
+						</div>
+						<div class="btn-thir">
+							<span class="ling">已经是斯库会员？<a>立即登陆</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

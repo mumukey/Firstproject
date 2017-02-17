@@ -101,22 +101,98 @@ $(function(){
 		$(".diver a").stop(true,true).animate({"left":0},300);
 		$(".diver i").stop(true,true).animate({"left":180},300);
 	});
-	//轮播图改变left实现
+//轮播图改变left实现
 	var lens = $(".bott-car-ul li").size();
 	var ord = 0;
 	var mytime = null;
 	console.log(lens);
 	mytime = setInterval(nextImg,3000);
-	function nextImg(){
+	function nextImg(){ 
 		ord++;
 		if(ord == lens-4){
 			
 			$(".bott-car-ul").css("left","0px");
 			ord = 0;
 		}
-		console.log(ord);
+		//console.log(ord);
 		$(".bott-car-ul").animate({left:-(ord)*229+"px"},1000);
 	}
-
+//搜索框吸顶
+	$(window).scroll(function() {
+		if($(window).scrollTop() > 720) {
+			$(".ceil").css({
+				"display":"block"
+			});
+		} else {
+			$(".ceil").css("display", "none");
+		}
+	});
+//返回顶部
+	$(window).scroll(function() {
+		if($(window).scrollTop() > 720) {
+			$(".backtop").css({
+				"display":"block"
+			});
+		}else {
+			$(".backtop").css("display", "none");
+		}
+	});
+	$(".backtop").click(function(){
+		$("body,html").animate({
+			scrollTop:0
+		},500);
+	});
+//电梯效果
 	
+	$(".elevator ul li").hover(function() {
+		//鼠标滑上去
+		$(this).addClass("active");
+	}, function() {
+		//鼠标移开
+		$(this).removeClass("active");
+	});
+	
+	var mark = 1;
+	$(".elevator ul li").click(function() {
+		mark = 2; //改变标记
+		$(".elevator ul li").removeClass("active");
+		$(this).addClass("active");
+		//点击左边导航 然后跳到指定的楼层
+		var $index = $(this).index(); //找到了对应的序列号
+		
+		var $top = $(".ele").eq($index).offset().top; //获取制定industry-floor与浏览器上面的距离
+		
+		$("body,html").animate({
+			scrollTop: ($top-200)
+		}, 500, function() {
+			mark = 1;
+		}); //浏览器滚动的高度
+	});
+	
+	$(window).scroll(function() {
+		if(mark == 1) {
+			var $t = $(this).scrollTop(); //获取滚动条滚动的高度
+			//document.title = $t;
+			if($t > 700) { //通过滚动条来判断
+				$(".elevator").fadeIn(); //淡入 导航慢慢显示出来
+			} else {
+				$(".elevator").fadeOut(); //淡出 导航慢慢消失
+			}
+			
+			var $obj = $(".ele");
+			//循环每一个industry-floor 然后找到最先满足条件的那个 industry-floor
+			$obj.each(function() {
+				var $index = $(this).index();
+				//楼层与浏览器上面的高度
+				var $height = $obj.eq($index).offset().top + $(this).height() / 2 ;
+				console.log($height) 
+				//document.title = $t + "--" + $height;
+				if($t < $height) {
+					$(".elevator ul li").removeClass("active")
+					$(".elevator ul li").eq($index).addClass("active");
+					return false;
+				}
+			});
+		}
+	});
 });

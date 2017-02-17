@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+}
+.secondheard{
+    width: 100%;
+    height: 80px;
+    background: #000000;
+    
+}
+.secondheard .secondheard_ma{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+.secondheard_ma .secondheard_mb{
+    overflow: hidden;
+    float: left;
+}
+.secondheard_ma .secondheard_mc{
+    overflow: hidden;
+    float: right;
+}
+.secondheard_ma .secondheard_mc a{
+    font-size: 12px;
+    color: #999999;
+    line-height: 80px;
+    display: inline-block;
+    padding-right: 20px;
+}
+.secondheard_mc a:hover{
+    color: #FFA500;
+}
+.ligin{
+    width: 100%;
+    height: 800px;
+    background: #0000FF;
+}
+.liginer{
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.liginer-box{
+    width: 400px;
+    overflow: hidden;
+    padding: 20px;
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    background: #FFFFFF;
+}
+.liginer-box h4{
+    font-size: 30px;
+    line-height: 50px;
+    color: #FFA500;
+    text-align: center;
+}
+.liginer-li{
+    width: 350px;
+    height: 50px;
+    border: 1px solid #CCCCCC;
+    margin-top: 30px;
+}
+.liginer-li input{
+    width: 250px;
+    height: 50px;
+    border: none;
+}
+.liginer-li .hint{
+    width: 100;
+    height: 50;
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+    line-height: 50px;
+    color: #FF0000;
+}
+.lingin-fir{
+    height: 40px;
+    line-height: 40px;
+}
+.lingin-sec{
+    width: 350px;
+    height: 50px;
+    background: #FFA500;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+}
+.lingin-thir{
+    overflow: hidden;
+    padding-top: 10px;
+}
+.lingin-thir p{
+    font-size: 12px;
+    color: #999999;
+}
+.lingin-four{
+    font-size: 12px;
+    color: #999999;
+    line-height: 30px;
+}
+.lingin-four span a{
+    color: #FFA500;
+}
+.lingin-four-fr{
+    color: #808080;
+    display: inline-block;
+    float: right;
+}

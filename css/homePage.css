@@ -31,6 +31,8 @@ i, em {
   float: right;
   padding-left: 17px;
   background: url(../img/shopcart.png) no-repeat 0 9px; }
+  .shoopcart:hover {
+    color: #382F6B; }
 
 .vertical {
   float: right;
@@ -44,6 +46,8 @@ i, em {
   color: #999;
   line-height: 30px;
   float: right; }
+  .bara:hover {
+    color: #382F6B; }
 
 .barb {
   height: 30px;
@@ -62,6 +66,8 @@ i, em {
   width: 100px;
   padding-left: 17px;
   display: none; }
+  .barbDiv:hover {
+    color: #382F6B; }
 
 .barbDiv a {
   width: 100px;
@@ -69,6 +75,8 @@ i, em {
   font-size: 12px;
   line-height: 15px;
   padding-top: 5px; }
+  .barbDiv a:hover {
+    color: #382F6B; }
 
 .barc {
   padding: 0 20px 0 10px;
@@ -76,6 +84,8 @@ i, em {
   color: #999;
   line-height: 30px;
   float: right; }
+  .barc:hover {
+    color: #382F6B; }
 
 .bard {
   font-size: 12px;
@@ -85,6 +95,8 @@ i, em {
 
 .bard a {
   padding: 0 10px 0 10px; }
+  .bard a:hover {
+    color: #382F6B; }
 
 .topBar-Logo {
   position: absolute;
@@ -123,7 +135,7 @@ i, em {
   border-right: none; }
 
 .search-input input {
-  width: 400px;
+  width: 410px;
   height: 31px;
   line-height: 31px;
   border: none;
@@ -156,6 +168,8 @@ i, em {
   font-size: 12px;
   color: #999;
   padding: 0 5px; }
+  .search-hot a:hover {
+    color: red; }
 
 .search-bar-head {
   height: 45px;
@@ -1078,7 +1092,9 @@ i, em {
     padding-top: 30px; }
     .foot .foot-list .foot-lister {
       width: 1200px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative; }
       .foot .foot-list .foot-lister .foot-lister1 {
         font-size: 12px;
         color: #999999;
@@ -1092,5 +1108,103 @@ i, em {
         line-height: 30px; }
         .foot .foot-list .foot-lister .foot-lister2 p span {
           padding-right: 20px; }
+      .foot .foot-list .foot-lister .foot-lister3 a {
+        display: inline-block;
+        padding-right: 30px;
+        font-size: 12px;
+        color: #999999; }
+      .foot .foot-list .foot-lister .foot-lister4 p {
+        font-size: 12px;
+        color: #999999;
+        line-height: 30px; }
+      .foot .foot-list .foot-lister .foot-lister5 a {
+        display: inline-block;
+        padding-right: 30px; }
+        .foot .foot-list .foot-lister .foot-lister5 a img {
+          height: 40px; }
+      .foot .foot-list .foot-lister .foot-lister6 {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        right: 10px; }
+        .foot .foot-list .foot-lister .foot-lister6 li {
+          display: inline-block;
+          width: 110px;
+          float: left;
+          text-align: center; }
+          .foot .foot-list .foot-lister .foot-lister6 li p {
+            font-size: 12px;
+            color: #999999; }
+
+.ceil {
+  width: 100%;
+  height: 75px;
+  background: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: none; }
+  .ceil .stick {
+    width: 685px;
+    height: 35px;
+    margin: 20px auto; }
+    .ceil .stick .stick0 {
+      width: 615px;
+      height: 31px;
+      border: 2px solid #463b7f;
+      float: left;
+      border-right: none; }
+      .ceil .stick .stick0 input {
+        width: 610px;
+        height: 31px;
+        line-height: 31px;
+        border: none;
+        padding-left: 5px;
+        font-size: 12px;
+        color: #999; }
+    .ceil .stick .stick1 {
+      width: 68px;
+      height: 35px;
+      float: left;
+      background: #463b7f; }
+      .ceil .stick .stick1 a {
+        width: 68px;
+        height: 35px;
+        display: block;
+        line-height: 35px;
+        color: #FFFFFF;
+        font-size: 14px;
+        text-align: center; }
+
+.backtop {
+  width: 65px;
+  height: 50px;
+  font-size: 14px;
+  background: #382F6B;
+  color: #fff;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  line-height: 50px;
+  text-align: center;
+  display: none;
+  border-radius: 15px; }
+
+.elevator {
+  width: 65px;
+  overflow: hidden;
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  z-index: 50;
+  display: none; }
+  .elevator ul li {
+    width: 65px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #999999; }
+  .elevator .active {
+    color: #FF0000; }
 
 /*# sourceMappingURL=homePage.css.map */

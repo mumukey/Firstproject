@@ -6,9 +6,16 @@
 		<link rel="stylesheet" href="css/homePage.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 		<script type="text/javascript" src="js/homePage.js"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" ></script>
+		<script type="text/javascript">
+			$(function(){
+				console.log($.cookie("userName"))
+				 $(".bard0").text($.cookie("userName"));
+			});
+		</script>
 	</head>
 	<body>
-		<!-----------登录 搜索  导航栏----------------->
+		<!-----------登录 搜索  导航栏---------------------->
 		<div class="fheard">
 			<!----------登录注册------------------->
 			<div class="topBar">
@@ -26,7 +33,7 @@
 					<a class="barc">我的订单</a>
 					<span class="vertical">|</span>
 					<span class="bard">
-						欢迎光临寺库&nbsp;
+						欢迎<span class="bard0"></span>光临寺库&nbsp;
 						<a>请登录</a>
 						<a>免费注册</a>
 					</span>
@@ -668,7 +675,7 @@
 				</div>
 			</div>
 		</div>
-		<!-------------------轮播图--------------------------------->
+		<!-------------------轮播图--------------------->
 		<div class="carous-fa">
 			<div class="carous">
 				<div class="carous-img">
@@ -693,7 +700,7 @@
 				<a class="btn-next">&gt;</a>
 			</div>
 		</div>
-		<!-------------------内容区-------------------------->
+		<!-------------------内容区--------------------->
 		<div class="content">
 			<!----------------范思哲--------------------->
 			<div class="content-img">
@@ -1019,7 +1026,7 @@
 					<a class="template-nav2">更多包袋<i> > </i></a>
 				</div>
 				<!----------模板商品--------------->
-				<div class="template-shoop">
+				<div class="template-shoop ele">
 					<ul>
 						<li class="tem-first">
 							<a><img class="imger" src="img/img26.jpg"/></a>
@@ -1080,7 +1087,7 @@
 					<a class="template-nav2">更多腕表<i> > </i></a>
 				</div>
 				<!----------模板商品--------------->
-				<div class="template-shoop">
+				<div class="template-shoop ele">
 					<ul>
 						<li class="tem-first">
 							<a><img class="imger" src="img/img30.jpg"/></a>
@@ -1138,7 +1145,7 @@
 					<a class="template-nav2">更多服装<i> > </i></a>
 				</div>
 				<!----------模板商品--------------->
-				<div class="template-shoop">
+				<div class="template-shoop ele">
 					<ul>
 						<li class="tem-first">
 							<a><img class="imger" src="img/img34.jpg"/></a>
@@ -1198,7 +1205,7 @@
 					<a class="template-nav2">更多鞋靴<i> > </i></a>
 				</div>
 				<!----------模板商品--------------->
-				<div class="template-shoop">
+				<div class="template-shoop ele">
 					<ul>
 						<li class="tem-first">
 							<a><img class="imger" src="img/img38.jpg"/></a>
@@ -1258,7 +1265,7 @@
 					<a class="template-nav2">更多配饰<i> > </i></a>
 				</div>
 				<!----------模板商品--------------->
-				<div class="template-shoop">
+				<div class="template-shoop ele">
 					<ul>
 						<li class="tem-first">
 							<a><img class="imger" src="img/img42.jpg"/></a>
@@ -1318,7 +1325,7 @@
 					<a class="template-nav2">更多首饰<i> > </i></a>
 				</div>
 				<!----------模板商品--------------->
-				<div class="template-shoop">
+				<div class="template-shoop ele">
 					<ul>
 						<li class="tem-first">
 							<a><img class="imger" src="img/img48.jpg"/></a>
@@ -1378,7 +1385,7 @@
 					<a class="template-nav2">更多家居生活<i> > </i></a>
 				</div>
 				<!----------模板商品--------------->
-				<div class="template-shoop">
+				<div class="template-shoop ele">
 					<ul>
 						<li class="tem-first">
 							<a><img class="imger" src="img/img54.jpg"/></a>
@@ -1438,7 +1445,7 @@
 					<a class="template-nav2">更多户外运动<i> > </i></a>
 				</div>
 				<!----------模板商品--------------->
-				<div class="template-shoop">
+				<div class="template-shoop ele">
 					<ul>
 						<li class="tem-first">
 							<a><img class="imger" src="img/img60.jpg"/></a>
@@ -1499,7 +1506,7 @@
 					<a class="template-nav2">更多美妆成人<i> > </i></a>
 				</div>
 				<!----------模板商品--------------->
-				<div class="template-shoop">
+				<div class="template-shoop ele">
 					<ul>
 						<li class="tem-first">
 							<a><img class="imger" src="img/img64.jpg"/></a>
@@ -1560,7 +1567,7 @@
 					<a class="template-nav2">更多母婴玩具<i> > </i></a>
 				</div>
 				<!----------模板商品--------------->
-				<div class="template-shoop">
+				<div class="template-shoop ele">
 					<ul>
 						<li class="tem-first">
 							<a><img class="imger" src="img/img68.jpg"/></a>
@@ -1620,7 +1627,7 @@
 					<a class="template-nav2">更多中国精品<i> > </i></a>
 				</div>
 				<!----------模板商品--------------->
-				<div class="template-shoop">
+				<div class="template-shoop ele">
 					<ul>
 						<li class="tem-first">
 							<a><img class="imger" src="img/img72.jpg"/></a>
@@ -1681,7 +1688,7 @@
 					<a class="template-nav2">更多豪车<i> > </i></a>
 				</div>
 				<!----------模板商品--------------->
-				<div class="template-shoop">
+				<div class="template-shoop ele">
 					<ul>
 						<li class="tem-first">
 							<a><img class="imger" src="img/img76.jpg"/></a>
@@ -1830,6 +1837,9 @@
 							<span>￥65484</span>
 						</a>
 					</li>
+					
+				</ul>
+				<ul class="bott-car-ul0">
 					<li>
 						<a>
 							<div><img src="img/lp01.JPG"/></div>
@@ -1858,12 +1868,19 @@
 							<span>￥5621</span>
 						</a>
 					</li>
+					<li>
+						<a>
+							<div><img src="img/lp02.jpg"/></div>
+							<p>HERMES(爱马仕) Birkin25黑色皮质手提包</p>
+							<span>￥118900</span>
+						</a>
+					</li>
 				</ul>
 				<a class="bott-car-next btn">&gt;</a>
 				<a class="bott-car-prve btn">&lt;</a>
 			</div>
 		</div>
-		<!--------------尾部------------------------>
+		<!--------------尾部--------------------------->
 		<div class="foot">
 			<div class="foot-text">
 				<dl class="foot-text-dl">
@@ -1950,11 +1967,69 @@
 							<a>帮助中心</a>
 							<a>寺库微博</a>
 							<a>友情链接</a>
-							<a></a>
-							<a></a>
+							<a>奢侈品热词</a>
+							<a>奢侈品资讯</a>
 						</p>
-					</div>	
+					</div>
+					<div class="foot-lister4">
+						<p>COPYRIGH @ 2010-1016 北京寺库商贸有限公司 版权所有</p>
+					</div>
+					<div class="foot-lister5">
+						<a><img src="img/f_01.jpg"/></a>
+						<a><img src="img/f_02.png"/></a>
+						<a><img src="img/f_03.jpg"/></a>
+						<a><img src="img/f_04.jpg"/></a>
+						<a><img src="img/f_05.jpg"/></a>
+					</div>
+					<ul class="foot-lister6">
+						<li>
+							<img src="img/app_foot0.jpg"/>
+							<p>手机客户端</p>
+						</li>
+						<li>
+							<img src="img/sk_foot1.jpg" />
+							<p>官方微信</p>
+						</li>
+					</ul>
 				</div>
+			</div>
+		</div>
+		<!-------------电梯 置顶 吸顶---------------------->
+		<div class="effect">
+			<!------------置顶----------------------->
+			<div class="ceil">
+				<div class="stick">
+					<div class="stick0">
+						<input type="text" value="HUGO BOSS/雨果波士" />
+					</div>
+					<div class="stick1">
+						<a>搜索</a>
+					</div>
+				</div>
+			</div>
+			<!---------------返回顶部----------------->
+			<div class="backtop">
+				<div >返回顶部</div>
+			</div>
+			<!---------------电梯---------------------->
+			<div class="elevator">
+				<ul>
+					<!--<li class="active">全球购</li>
+					<li>闪购</li>
+					<li>我卖我拍</li>-->
+					<li class="active">包袋</li>
+					<li>腕表</li>
+					<li>服装</li>
+					<li>鞋靴</li>
+					<li>配饰</li>
+					<li>首饰</li>
+					<li>家居生活</li>
+					<li>户外运动</li>
+					<li>美妆成人</li>
+					<li>母婴玩具</li>
+					<li>中国精品</li>
+					<li>豪车</li>
+				</ul>
 			</div>
 		</div>
 	</body>
