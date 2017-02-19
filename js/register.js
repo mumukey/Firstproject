@@ -44,12 +44,14 @@ $(function(){
 					}else{
 						$("#hinter").text("可以注册");
 						order++;
+						//console.log(order+"用户名");
 					}
 				});
 			}
 		}
 	});
 	$("#userPass").blur(function(){
+		
 		if(this.value == ""){
 			$("#hinter1").text("请输入密码");
 		}else{
@@ -57,25 +59,31 @@ $(function(){
 			if(!str1.test(this.value)){
 				$("#hinter1").text("密码格式不对");
 			}else{
-				ord++;
+				order++;
+				//console.log(order+"密码");
 			}
 		}
 	});
 	
 	$("#userPassWord").blur(function(){
+		//console.log($("#userPass").val())
 		if(this.value == ""){
 			$("#hinter2").text("请输入确认密码");
-		}else if( this.value == $("#userPass").value){
-			ord++;
+		}else if( this.value != $("#userPass").val()){
+			$("#hinter2").text("密码不一致");
+		}else{
+			order++;
+			//console.log(order+"确认密码");
 		}
 	});
 	
 	$("#btn").click(function(){
+		//console.log(order);
 		if(order == 3){
+			console.log("order");
 			$.post("regSave.php",{"userName":$("#phoneName").val(),"pass":$("#userPass").val()},function(data){
 				if(data.indexOf("1")>-1){
 					$.cookie( "userName" , $("#phoneName").val()  , { path: '/', expires: 7 });
-				    $("#btn").removeAtt("disabled");
 				    location.href="homePage.html"
 				}
 			});

@@ -94,7 +94,9 @@ i, em {
   float: right; }
 
 .bard a {
-  padding: 0 10px 0 10px; }
+  padding: 0 10px 0 10px;
+  color: #999;
+  text-decoration: none; }
   .bard a:hover {
     color: #382F6B; }
 
